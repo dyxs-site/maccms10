@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{$title}</title>
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/layui/2.6.8/css/layui.css">
+    <link rel="stylesheet" href="__STATIC__/css/admin_style.css?v=1024">
+    <script type="text/javascript" src="__STATIC__/js/jquery.js?v=1024"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.clipboard.js?v=1024"></script>
+    <script type="text/javascript" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/layui/2.6.8/layui.js"></script>
+    <script>
+        var ROOT_PATH="__ROOT__",ADMIN_PATH="{$_SERVER['SCRIPT_NAME']}", MAC_VERSION='v10';
+    </script>
+</head>
+<body>
+<style>
+@media screen and (max-width:768px){
+	.layui-content,.layui-contentAD {white-space:nowrap;overflow:scroll;position:relative;width:100%;}
+	.layui-contentAD td{float: left;width: 100%;}
+}
+</style>
+<div class="p10">
+    <div class="showpic" style="display:none;">
+        <img class="showpic_img" style="width:100%;height:100%;" referrerPolicy="no-referrer"></div>
+    <form class="layui-form layui-form-pane" name="configform" id="configform">
+        <div class="layui-tab" lay-filter="dmku" overflow>
+            <ul class="layui-tab-title">
+                <li class="layui-this">基本设置</li>
+                <li class="">广告设置</li>
+				<li class="">使用教程</li>
+				</ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show" name="基本设置">
+                    <blockquote class="layui-elem-quote layui-quote-nm">
+                        <p>温馨提示：</p>
+                        <p>本播放器基于Videojs 8.3.0版本播放器开发，官网：https://videojs.com/，此款播放器只适合在网页端使用，不支持在APP里面使用</p>
+                        <p style="color:red;">一些功能在移动端不会生效，因为部分移动端浏览器会劫持播放器，替换为浏览器自带的播放器。</p>
+                    </blockquote>
+                    <fieldset class="layui-elem-field">
+                        <legend>基本设置</legend>
+                        <div class="layui-field-box">
+							<div class="layui-form-item">
+                                <label class="layui-form-label">自动播放</label>
+                                <div class="layui-input-inline">
+                                    <input type="checkbox" name="yzm[autoplay]" lay-skin="switch"  lay-filter="switchTest" lay-text="开|关" {if condition="$yzm.autoplay eq 'on'" }checked{/if}></div>
+                                <div class="layui-form-mid layui-word-aux">播放器是否自动播放，在移动端和谷歌浏览器中自动播放设置会失效。</div></div>
+							<div class="layui-form-item">
+                                <label class="layui-form-label">记忆播放</label>
+                                <div class="layui-input-inline">
+                                    <input type="checkbox" name="yzm[history]" lay-skin="switch" lay-text="开|关" {if condition="$yzm.history eq 'on'" }checked{/if}>
+								</div>
+                                <div class="layui-form-mid layui-word-aux">开启记忆播放后，播放时可自动跳转到播放过的位置</div></div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">视频封面</label>
+                                <div class="layui-input-inline long">
+                                    <input type="text" name="yzm[poster]" value="{$yzm.poster|default='/static/player/cj/videojs/poster.jpg'}" class="layui-input upload-input  upload-img" placeholder="图片地址"></div>
+									<div class="layui-form-mid layui-word-aux">视频加载时的预览图片，可以不设置，需为http开头的图片地址</div>
+                            </div>								
+							<div class="layui-form-item">
+                                <label class="layui-form-label">LOGO</label>
+                                <div class="layui-input-inline long">
+                                    <input type="text" name="yzm[logo]" value="{$yzm.logo.url}" class="layui-input upload-input upload-img" placeholder="logo图片地址"></div>
+								<div class="layui-input-inline">
+                                    <input type="text" name="yzm[logo][width]" value="{$yzm.logo.width|default='150px'}" class="layui-input" placeholder="logo图片宽度"></div>	
+								<div class="layui-input-inline">
+                                    <input type="text" name="yzm[logo][height]" value="{$yzm.logo.height|default='50px'}" class="layui-input" placeholder="logo图片高度"></div>	
+                                <div class="layui-form-mid layui-word-aux">播放器logo图片地址和尺寸设置，可以不设置</div>
+                            </div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">logo位置</label>
+								<div class="layui-input-black">
+									<input type="radio" name="yzm[logo][position]" value="left" title="左上角" {if condition="$yzm.logo.position eq 'left'" }checked{/if}>
+									<input type="radio" name="yzm[logo][position]" value="right" title="右上角" {if condition="$yzm.logo.position eq 'right' || $yzm.logo.position eq ''" }checked{/if} >
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">跳过片头</label>
+          						<div class="layui-input-inline">
+            						<div class="layui-input-inline">
+            						<input type="number" name="yzm[jump_head]" placeholder="请填写跳过多少秒" value="{$yzm.jump_head}" autocomplete="off" class="layui-input"></div></div>
+          						<div class="layui-form-mid layui-word-aux">单位秒，只支持pc端，不支持移动端；跳过片头不会有任何提示</div></div>
+                        </div>
+                    </fieldset>
+                   
+                    <div class="layui-form-item">
+                        <div class="center">
+                            <button class="layui-btn" type="button" lay-submit="" lay-filter="save">立 即 保 存</button></div>
+                    </div>
+                </div>
+                <div class="layui-tab-item" name="广告设置">
+					<div class="layui-form-item">
+                        <label class="layui-form-label">免广告权限</label>
+                            <div class="layui-input-inline">
+                                <select name="yzm[ads][group]">
+									<option value="" >请选择</option>
+									{volist name="group" id="vo"}
+										{if condition="$vo['group_id']>1"}
+										<option value="{$vo.group_id}" {if condition="$yzm.ads.group eq $vo['group_id']"}selected {/if}>{$vo.group_name}</option>
+										{/if}
+									{/volist}
+								</select>
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">选择哪个等级的会员可以免看广告</div></div>
+						
+					<fieldset class="layui-elem-field">
+                        <legend>前置广告设置</legend>
+					<div class="layui-field-box">						
+						
+						
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">前置广告开关</label>
+                        <div class="layui-input-inline">
+                            <input type="checkbox" name="yzm[ads][pre][state]" lay-skin="switch" lay-text="开|关" {if condition="$yzm.ads.pre.state eq 'on'" }checked{/if}>
+                        </div>
+						<div class="layui-form-mid layui-word-aux">支持PC端显示前置广告，手机端有些浏览器支持有些不支持</div>
+                    </div>
+					
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">视频广告内容</label>
+                            <div class="layui-input-inline long">
+                                <input type="text" name="yzm[ads][pre][url]" value="{$yzm.ads.pre.url}" class="layui-input upload-input" placeholder="视频地址"></div>
+                            <div class="layui-form-mid layui-word-aux">视频地址,支持mp4或者m3u8直链</div></div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">视频广告链接</label>
+                            <div class="layui-input-inline long">
+                                <input type="text" name="yzm[ads][pre][link]" value="{$yzm.ads.pre.link}"  class="layui-input upload-input" placeholder="点击链接地址"></div>
+                            <div class="layui-form-mid layui-word-aux">点击视频跳转链接地址</div></div>
+
+					</div></fieldset>
+					
+					<fieldset class="layui-elem-field">
+                        <legend>暂停广告设置</legend>
+					<div class="layui-field-box">
+					
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">暂停广告开关</label>
+                        <div class="layui-input-inline">
+                            <input type="checkbox" name="yzm[ads][pause][state]" lay-skin="switch"  lay-text="开|关" {if condition="$yzm.ads.pause.state eq 'on'" }checked{/if}>
+                        </div>
+						<div class="layui-form-mid layui-word-aux">暂停广告只支持PC端显示，不支持移动端显示</div>
+					</div>
+					
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">暂停图片链接</label>
+                        <div class="layui-input-inline long">
+                            <input type="text" name="yzm[ads][pause][url]" value="{$yzm.ads.pause.url}"  class="layui-input upload-input  upload-img" placeholder="图片地址"></div>
+                        <div class="layui-form-mid layui-word-aux">暂停广告图片链接</div></div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">暂停跳转链接</label>
+                        <div class="layui-input-inline long">
+                            <input type="text" name="yzm[ads][pause][link]" value="{$yzm.ads.pause.link}"  class="layui-input upload-input" placeholder="点击链接地址"></div>
+                        <div class="layui-form-mid layui-word-aux">暂停图片广告点击后跳转地址</div></div>
+						
+					</div></fieldset>
+
+                    <div class="layui-form-item center">
+                        <div>
+                            <button class="layui-btn" type="button" lay-submit="" lay-filter="save">立 即 保 存</button></div>
+                    </div>
+                </div>
+                <div class="layui-tab-item" name="调用教程">
+                    <blockquote class="layui-elem-quote layui-quote-nm">
+						<p>以下是手动调用此款播放器的教程：</p>
+						<p>第一步，导航栏上找到“视频”-“播放器”</p>
+						<p>第二步，选择指定的播放器，点击“编辑”</p>
+						<p>第三步，在弹出的窗口中，选择切换到“播放器代码”</p>
+						<p>第四步，复制下方的调用代码，粘贴到“播放器代码”中保存即可</p>
+						<p>第五步，一定要清理清理浏览器缓存，否则可能前端不能实时显示</p>
+					</blockquote>
+					<div class="layui-form-item">
+						<label class="layui-form-label">调用代码</label>
+						<div class="layui-input-block">
+							<textarea class="layui-textarea">MacPlayer.Html='<iframe width="100%" height="'+MacPlayer.Height+'" src="/static/player/cj/videojs-ads.html" frameborder="0" allowfullscreen="true" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>';MacPlayer.Show();</textarea>
+						</div>    
+					</div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+{include file="../../../application/admin/view/public/foot" /}
+
+<script type="text/javascript">
+install_dir = "{$GLOBALS['config']['site']['install_dir']}";
+layui.use(['form', 'laydate', 'laypage', 'table', 'layer', 'element', 'colorpicker'], function() {
+	var laydate = layui.laydate,
+		laypage = layui.laypage,
+		layer = layui.layer,
+		table = layui.table,
+		element = layui.element,
+		form = layui.form,
+		laytpl = layui.laytpl,
+		colorpicker = layui.colorpicker;
+
+	form.on('submit(save)', function(data) {
+		layer.msg('正在提交', {
+			time: 30000,
+			shade: 0.6,
+			icon: 16
+		});
+		$.ajax({
+			type: 'POST',
+			data: data.field,
+			dataType: 'json',
+			url: './set',
+			success: function(data) {
+				layer.msg('保存完成', {
+					time: 1000,
+					icon: 1
+				})
+			}
+		});
+		return false
+	});
+	
+	$('.upload-img').hover(function(e) {
+		var e = window.event || e;
+		var imgsrc = $(this).val();
+		if (imgsrc.trim() == "") {
+			return
+		}
+		var left = e.clientX + document.body.scrollLeft + 20;
+		var top = e.clientY + document.body.scrollTop + 20;
+		$(".showpic").css({
+			'left': left,
+			'top': top,
+			'width': "300px",
+			'height': "200px",
+			'display': ""
+		});
+		$(".showpic_img").attr("src", imgsrc)
+	}, function(e) {
+		$(".showpic").css("display", "none")
+	})
+});
+</script>
+
+</body>
+</html>

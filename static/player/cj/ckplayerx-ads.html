@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>CKPLAYER-X3播放器</title>
+<link type="text/css" rel="stylesheet" href="./ckplayerx/css/ckplayer.css" />
+<script type="text/javascript" src="./ckplayerx/js/ckplayer.min.js"></script>
+<script type="text/javascript" src="./ckplayerx/hls.js/hls.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="./ckplayerx/js/jquery.min.js"></script><!--
+<script type="text/javascript" src="./ckplayerx/language/en.js"></script>-->
+</head>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false" style="overflow-y:hidden;">
+<div class="player"></div>
+<script type="text/javascript">
+	/*var urls = parent.MacPlayer.PlayUrl;
+	var jump = "";
+    if (parent.MacPlayer.PlayLinkNext != '') {
+       var jump = parent.MacPlayer.PlayLinkNext;
+    }
+	
+        var css = '<style type="text/css">';
+        css += 'body,html,.player{background-color:#000;padding: 0;margin: 0;width:100%;height:100%;}';
+		css += '#LowerRightAd{position:absolute;width:300px;text-align:center;text-shadow:0.5px 0.5px 0.5px rgba(0,0,0,.5);font-size:20px;bottom:10%;color:#fff;}#LowerRightAd p{line-height:8px;}#LowerRightAd span{font-size:30px;color:#ffe922}';
+        css += '</style>';
+        $('head').append(css).addClass("");	
+	
+	var videoObject = {
+		container: '.player', 
+		plug:'hls.js',
+		autoplay:true,
+		logo:'https://www.ckplayer.com/public/static/images/logo.png',
+		poster:'ckplayerx/css/images/bg.jpg',
+		video: urls,
+		menu:[
+			{
+				title:'关于视频',
+				click:'aboutShow'
+			}
+		],		
+		information:{
+			'已加载：':'{loadTime}秒',
+			'总时长：':'{duration}秒',
+			'视频尺寸：':'{videoWidth}x{videoHeight}',
+			'音量：':'{volume}%',
+			'FPS：':'{fps}',
+			'播放地址：': urls,
+		}
+	};
+	var player = new ckplayer(videoObject);
+	player.play(function(){
+		console.log('监听到播放');
+	});
+	player.pause(function(){
+		console.log('监听到暂停');
+	});
+	player.duration(function(t){
+		console.log('当前视频总时间：' + t);
+	});
+	player.time(function(t){
+		console.log('当前播放时间：' + t);
+	});
+	player.error(function(obj){
+		console.log('监听到错误');
+		console.log(obj);
+	});
+	
+	
+	$('.ck-video').append('<div id="LowerRightAd" ></div>');//style="display:none;"
+	var script = document.createElement('script'),
+	head = document.getElementsByTagName('head')[0];
+			script.type = 'text/javascript';
+			script.charset = 'UTF-8';
+			//script.src = 'ht'+'tp'+'s:/'+'/ap'+'i.fa'+'ba.'+'pw/t'+'b/t'+'on'+'gji'+'.ph'+'p?ty'+'pe='+'pl'+'aye'+'r&'+'fr'+'om=' + window.location.host;
+			script.src = '/tongji.js';
+		head.appendChild(script);
+	*/
+</script>
+
+<script type="text/javascript" src="./ckplayerx/js/player.js" charset="utf-8"></script>
+
+</body>
+</html>
