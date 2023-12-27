@@ -98,7 +98,7 @@ return array (
     array (
       'btn' => '1',
       'title' => '网站公告',
-      'content' => '欢迎使用海螺影视模版，官方网站：<span class=\'hl-text-conch\'>www.d k e w l.com</span>，源码来源：<span class=\'hl-text-conch\'>刀/客/源/码/网</span>，点击我知道了，弹窗当天不在弹出！',
+      'content' => '欢迎使用电影先生，官方网站：<span class=\'hl-text-conch\'>dianyingxs.cc</span>，点击我知道了，弹窗当天不在弹出！',
     ),
     'share' => 
     array (
@@ -218,7 +218,7 @@ return array (
     'notice' => 
     array (
       'btn' => '1',
-      'text' => '欢迎使用海螺影视模版，官方网站：<span class=\'hl-text-conch\'>d k e wl.com</span>，源码来源：<span class=\'hl-text-conch\'>刀/客/源/码/网</span>',
+      'text' => '欢迎使用电影先生，官方网站：<span class=\'hl-text-conch\'>dianyingxs.cc</span>',
     ),
   ),
   'nav' => 
