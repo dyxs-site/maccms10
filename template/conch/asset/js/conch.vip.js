@@ -522,7 +522,7 @@ var Conch = {
             $.getScript(maccms.path + "/template/conch/asset/js/set/autocomplete.js",function(){
             var SearchWidth = $('.hl-search-text').innerWidth();
             try {
-                $($obj).autocomplete(maccms.path + '/index.php/ajax/suggest?mid=' + $mid, {
+                $($obj).autocomplete(maccms.path + '/ajax/suggest?mid=' + $mid, {
                     inputClass: "hl-search-input",
                     resultsClass: "conch-results hl-alert-box hl-bg-site hl-fadeIn",
                     width: SearchWidth, scrollHeight: 400, minChars: 1, matchSubset: 0,
@@ -641,9 +641,9 @@ var Conch = {
                 });
             }
             if(MAC.Cookie.Get('user_id') !=undefined && MAC.Cookie.Get('user_id')!=''){
-                var $User = maccms.path + '/index.php/user',
-                    $Favs = maccms.path + '/index.php/user/favs',
-                    $Plays = maccms.path + '/index.php/user/plays',
+                var $User = maccms.path + '/user',
+                    $Favs = maccms.path + '/user/favs',
+                    $Plays = maccms.path + '/user/plays',
                     $UserId = MAC.Cookie.Get('user_id'),
                     $UserName = MAC.Cookie.Get('user_name'),
                     $UserNickName = MAC.Cookie.Get('user_nick_name'),

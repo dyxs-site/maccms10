@@ -285,32 +285,32 @@ return array (
     'type' => 
     array (
       'PC' => '68,69,1,2,3,4',
-      'link-68' => '/index.php/actor/index.html',
-      'link-69' => '/index.php/art/index.html',
+      'link-68' => '/actor/index.html',
+      'link-69' => '/art/index.html',
       'mobile' => '3,4',
     ),
     'mid' => 
     array (
       'PC' => '9,10,3,5',
       'title-9' => '角色',
-      'link-9' => '/index.php/role/index.html',
+      'link-9' => '/role/index.html',
       'title-10' => '剧情',
-      'link-10' => '/index.php/plot/index.html',
+      'link-10' => '/plot/index.html',
       'title-3' => '专题',
-      'link-3' => '/index.php/topic/index.html',
+      'link-3' => '/topic/index.html',
       'title-5' => '留言',
-      'link-5' => '/index.php/gbook/index.html',
+      'link-5' => '/gbook/index.html',
       'mobile' => NULL,
     ),
     'aid' => 
     array (
       'PC' => '2,7',
       'title-2' => '最新',
-      'link-2' => '/index.php/map/index.html',
+      'link-2' => '/map/index.html',
       'title-7' => '排行',
-      'link-7' => '/index.php/label/rank.html',
+      'link-7' => '/label/rank.html',
       'title-6' => '我的',
-      'link-6' => '/index.php/user/index.html',
+      'link-6' => '/user/index.html',
       'mobile' => NULL,
     ),
     'top' => 

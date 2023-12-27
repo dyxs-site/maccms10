@@ -65,7 +65,7 @@ function gold_init(){
 					$lis.removeClass("active");
 					$("ul.rating li:lt(" + n + ")").addClass("active");
 					$("#ratewords").html($title);
-					$.getJSON(maccms.path+'/index.php/ajax/score?mid='+$('#rating').attr('data-mid')+'&id='+$('#rating').attr('data-id')+'&score='+($(this).attr('val')*2), function (r) {
+					$.getJSON(maccms.path+'/ajax/score?mid='+$('#rating').attr('data-mid')+'&id='+$('#rating').attr('data-id')+'&score='+($(this).attr('val')*2), function (r) {
 						if (parseInt(r.code) == 1) {
 							stars(r);
 							$.showfloatdiv({txt: r.msg});
