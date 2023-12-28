@@ -33,7 +33,16 @@ return array (
     'mob_status' => '0',
     'mob_template_dir' => 'conch',
     'mob_html_dir' => 'html',
-    'site_tj' => '统计代码',
+    'site_tj' => '<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f46a2caaf84b781dc103b13289d90383";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+',
     'site_status' => '1',
     'site_close_tip' => '站点暂时关闭，请稍后访问',
     'ads_dir' => 'ads',
@@ -483,7 +492,7 @@ return array (
   array (
     'suffix_hide' => '0',
     'route_status' => '0',
-    'status' => '0',
+    'status' => '1',
     'encode_key' => 'abcdefg',
     'encode_len' => '6',
     'vod_id' => '0',
