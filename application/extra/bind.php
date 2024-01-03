@@ -50,4 +50,8 @@ return array (
   'wujinzy_33' => 4,
   'wujinzy_37' => 16,
   'wujinzy_20' => 8,
+  'hongniuzy_30' => 19,
+  'hongniuzy_29' => 3,
+  'wujinzy_41' => 19,
+  'wujinzy_21' => 3,
 );
