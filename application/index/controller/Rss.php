@@ -28,6 +28,12 @@ class Rss extends Base
         echo $html;
     }
 
+    public function sitemap()
+    {
+        $html = $this->label_fetch('rss/sitemap');
+        echo $html;
+    }
+
     public function so()
     {
         $html = $this->label_fetch('rss/so');
