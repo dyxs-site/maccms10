@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    {maccms:vod num="100" order="desc" by="time"}
+    <url>
+        <loc>{$maccms.http_type}{$maccms.site_url}{:mac_url_vod_detail($vo)}</loc>
+        <video:video>
+            <video:thumbnail_loc>{$vo.vod_pic|mac_url_img}</video:thumbnail_loc>
+            <video:title><![CDATA[{$vo.vod_name}]]></video:title>
+            <video:description>
+                <![CDATA[{$vo.vod_content|mac_filter_html}]]>
+            </video:description>
+            <video:content_loc>
+                {$maccms.http_type}{$maccms.site_url}{:mac_url_vod_play($vo,['sid'=>1,'nid'=>1])}
+            </video:content_loc>
+            <video:player_loc>
+                {$maccms.http_type}{$maccms.site_url}{:mac_url_vod_play($vo,['sid'=>1,'nid'=>1])}
+            </video:player_loc>
+            <video:view_count>{$vo.vod_hits}</video:view_count>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:requires_subscription>no</video:requires_subscription>
+            <video:uploader info="https://dianyingxs.cc">电影先生</video:uploader>
+            <video:live>no</video:live>
+        </video:video>
+    </url>
+    {/maccms:vod}
+</urlset>
