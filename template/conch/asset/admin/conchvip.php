@@ -261,8 +261,8 @@ return array (
     'level' => 
     array (
       'PC' => '1',
-      'title' => '海螺模版',
-      'link' => 'http://www.conch.vip',
+      'title' => '电影先生',
+      'link' => 'http://dianyingxs.cc',
       'pic' => 'template/conch/asset/img/hailuo.png',
     ),
     'custom' => 

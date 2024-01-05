@@ -922,7 +922,7 @@ var Conch = {
             }
         },
         'Copyright':function(){
-            var $nam = '海螺模版Conch_M005',
+            var $nam = '电影先生Conch_M005',
                 $mail = 'mail@54zm.com',
                 $qun = 'https://t.me/+9IqSVm6UesJlODBl',
                 $ver = conchtpl.ver;
