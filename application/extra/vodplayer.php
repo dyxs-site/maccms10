@@ -7,11 +7,24 @@ return array (
     'show' => 'DPlayer-H5播放器',
     'des' => '支持手机电脑在线播放',
     'target' => '_self',
-    'ps' => '0',
+    'ps' => '1',
     'parse' => '',
     'sort' => '1220',
     'tip' => '无需安装任何插件',
     'id' => 'dplayer',
+  ),
+  'ptzy' => 
+  array (
+    'status' => '1',
+    'from' => 'ptzy',
+    'show' => '葡萄资源',
+    'des' => '支持手机电脑在线播放',
+    'target' => '_self',
+    'ps' => '0',
+    'parse' => '',
+    'sort' => '1213',
+    'tip' => '无需安装任何插件',
+    'id' => 'ptzy',
   ),
   'wjm3u8' => 
   array (
@@ -77,5 +90,18 @@ return array (
     'sort' => '1000',
     'tip' => '无需安装任何插件',
     'id' => 'slm3u8',
+  ),
+  'http' => 
+  array (
+    'status' => '1',
+    'from' => 'http',
+    'show' => '在线下载',
+    'des' => '支持手机电脑在线播放',
+    'target' => '_self',
+    'ps' => '0',
+    'parse' => '',
+    'sort' => '100',
+    'tip' => '无需安装任何插件',
+    'id' => 'http',
   ),
 );
