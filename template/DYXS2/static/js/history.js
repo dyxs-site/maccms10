@@ -1,6 +1,5 @@
 /*!
  * Copyright 2016-2018 http://v.shoutu.cn
- * Email 726662013@qq.com,admin@shoutu.cn
  */
 $(document).ready(function ($) {
   var recente = $.cookie("mac_history_dianying");
