@@ -14,12 +14,13 @@
 	     
 <main id="index-main" class="wrapper">
 	<div class="content">
-	    {include file="index/slide"}	 
+        <!--轮播图-->
+        {include file="index/slide"}
 
 	<!--AD1-->
-	{if condition="$dyxsst['dycms']['s3']['ad1'] eq 1"}
-	<div class="index-recommend recommend-list"><a href="{$dyxsst.dycms.s3.ad1_url}" target="_blank"><div class="pc"><img src="{:mac_url_img($dyxsst.dycms.s3.ad1_pc)}"></div><div class="phone"><img src="{:mac_url_img($dyxsst.dycms.s3.ad1_wap)}"></div></a></div>
-	{/if}
+<!--	{if condition="$dyxsst['dycms']['s3']['ad1'] eq 1"}-->
+<!--	<div class="index-recommend recommend-list"><a href="{$dyxsst.dycms.s3.ad1_url}" target="_blank"><div class="pc"><img src="{:mac_url_img($dyxsst.dycms.s3.ad1_pc)}"></div><div class="phone"><img src="{:mac_url_img($dyxsst.dycms.s3.ad1_wap)}"></div></a></div>-->
+<!--	{/if}-->
 	<!---->
 	    
 	     {include file="index/hot"}	 
