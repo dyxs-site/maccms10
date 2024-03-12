@@ -28,10 +28,10 @@ return array (
     'install_dir' => '/',
     'site_logo' => 'upload/site/20231225-1/f00158203d350e460ccf476064393482.png',
     'site_waplogo' => 'upload/site/20231225-1/e11b830eef6fe1fcd627f1a718e7377d.png',
-    'template_dir' => 'conch',
+    'template_dir' => 'DYXS2',
     'html_dir' => 'html',
     'mob_status' => '0',
-    'mob_template_dir' => 'conch',
+    'mob_template_dir' => 'DYXS2',
     'mob_html_dir' => 'html',
     'site_tj' => '<script>
 var _hmt = _hmt || [];
