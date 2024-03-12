@@ -157,28 +157,20 @@ var _hmt = _hmt || [];
     'thumb_type' => '1',
     'watermark' => '0',
     'watermark_location' => '7',
-    'watermark_content' => 'test',
+    'watermark_content' => 'dyxs.site',
     'watermark_size' => '40',
     'watermark_color' => '#FF0000',
     'protocol' => 'http',
     'mode' => 'local',
+    'keep_local' => '0',
     'remoteurl' => 'http://img.test.com/',
     'api' => 
     array (
-      'ftp' => 
-      array (
-        'host' => '',
-        'port' => '21',
-        'user' => 'test',
-        'pwd' => 'test',
-        'path' => '/',
-        'url' => '',
-      ),
-      'qiniu' => 
+      'upyun' => 
       array (
         'bucket' => '',
-        'accesskey' => '',
-        'secretkey' => '',
+        'username' => '',
+        'pwd' => '',
         'url' => '',
       ),
       'uomg' => 
@@ -187,11 +179,20 @@ var _hmt = _hmt || [];
         'key' => '',
         'type' => 'sogou',
       ),
-      'upyun' => 
+      'qiniu' => 
       array (
         'bucket' => '',
-        'username' => '',
-        'pwd' => '',
+        'accesskey' => '',
+        'secretkey' => '',
+        'url' => '',
+      ),
+      'ftp' => 
+      array (
+        'host' => '',
+        'port' => '21',
+        'user' => 'test',
+        'pwd' => 'test',
+        'path' => '/',
         'url' => '',
       ),
       'weibo' => 
@@ -257,7 +258,7 @@ var _hmt = _hmt || [];
       'hits_end' => '1000',
       'updown_start' => '1',
       'updown_end' => '1000',
-      'score' => '1',
+      'score' => '0',
       'pic' => '0',
       'tag' => '0',
       'class_filter' => '1',
@@ -269,7 +270,7 @@ var _hmt = _hmt || [];
       'pselang' => '0',
       'urlrole' => '0',
       'inrule' => ',f,g',
-      'uprule' => ',a,c,u,v',
+      'uprule' => ',a,c,d,u,v',
       'filter' => '色戒,色即是空',
       'namewords' => '第1季=第一季#第2季=第二季#第3季=第三季#第4季=第四季',
       'thesaurus' => ' =',
@@ -598,8 +599,8 @@ plotdetail/<id>   => plot/detail',
     'widthpop' => '0',
     'heightpop' => '600',
     'second' => '5',
-    'prestrain' => '//union.maccms.site/html/prestrain.html',
-    'buffer' => '//union.maccms.site/html/buffer.html',
+    'prestrain' => '//dianyingxs.cc/html/prestrain.html',
+    'buffer' => '//dianyingxs.cc/html/loading.html',
     'parse' => '',
     'autofull' => '0',
     'showtop' => '1',
