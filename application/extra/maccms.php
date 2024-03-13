@@ -17,7 +17,7 @@ return array (
   ),
   'site' => 
   array (
-    'site_name' => '电影先生 - 在线 播放 观看',
+    'site_name' => '电影先生 - dianyingxs.cc 在线 播放 观看',
     'site_url' => 'dianyingxs.cc',
     'site_wapurl' => 'dianyingxs.cc',
     'site_keywords' => '电影先生,在线播放,在线观看,百度网盘,免费视频,在线视频,预告片,dianyingxs.cc',
@@ -63,7 +63,7 @@ var _hmt = _hmt || [];
     'cache_time' => '3600',
     'cache_page' => '1',
     'cache_time_page' => '3600',
-    'compress' => '1',
+    'compress' => '0',
     'input_type' => '1',
     'ajax_page' => '0',
     'wall_filter' => '0',
