@@ -2,22 +2,6 @@
 return array (
   0 => 
   array (
-    'name' => '闪电资源站',
-    'rema' => '全网秒播,资源齐全',
-    'flag' => 'shandianzy',
-    'apis' => 'https://sdzyapi.com/api.php/provide/vod/from/sdm3u8/at/json/',
-    'zylink' => 'https://www.shan05.com',
-    'coll' => '闪电播放,sdm3u8,1207,1',
-    'type' => '2',
-    'filter' => '0',
-    'filter_from' => '',
-    'opt' => '0',
-    'sync_pic_opt' => '0',
-    'tips' => '<span class="layui-badge layui-bg-green">我的收藏</span>',
-    'collect_mid' => 1,
-  ),
-  1 => 
-  array (
     'name' => '无尽资源站',
     'rema' => '国内CDN,全网秒播,资源丰富',
     'flag' => 'wujinzy',
@@ -32,7 +16,7 @@ return array (
     'tips' => '<span class="layui-badge layui-bg-green">我的收藏</span>',
     'collect_mid' => 1,
   ),
-  2 => 
+  1 => 
   array (
     'name' => '红牛资源站',
     'rema' => '全网秒播,国内CDN,资源齐全',
