@@ -10,7 +10,7 @@ return array (
     'param' => 'ac=cj&h=24&cjflag=hongniuzy&cjurl=https%3A%2F%2Fwww.hongniuzy2.com%2Fapi.php%2Fprovide%2Fvod%2Ffrom%2Fhnm3u8%2Fat%2Fjson%2F',
     'weeks' => '1,2,3,4,5,6,0',
     'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
-    'runtime' => 1710339793,
+    'runtime' => 1710473591,
   ),
   'hongniuzyzanzhu01week' => 
   array (
