@@ -1,13 +1,16 @@
             <div class="box view-heading">
 			<div class="mobile-play">
 				<div class="module-item-cover">
-					<div class="module-item-pic"><img class="lazyload" data-src="{:mac_url_img($obj.vod_pic)}" src="{$maccms.path_tpl}static/picture/loading.png"></div>
+					<div class="module-item-pic">
+						<img class="lazyload" alt="{$obj.vod_name}加载中" data-src="{:mac_url_img($obj.vod_pic)}" src="{$maccms.path_tpl}static/picture/loading.png">
+					</div>
 				</div>
 			</div>
 			<div class="video-cover">
 				<div class="module-item-cover">
 					<div class="module-item-pic">
-						<a href="{:mac_url_vod_play($obj)}" title="立刻播放{$obj.vod_name}"><i class="icon-play"></i></a><img class="lazyload" alt="{$obj.vod_name}" data-src="{:mac_url_img($obj.vod_pic)}" src="{:mac_url_img($dyxsst.dycms.s1.pic)}">
+						<a href="{:mac_url_vod_play($obj)}" title="立刻播放{$obj.vod_name}"><i class="icon-play"></i></a>
+						<img class="lazyload" alt="{$obj.vod_name}" data-src="{:mac_url_img($obj.vod_pic)}" src="{:mac_url_img($dyxsst.dycms.s1.pic)}">
 						<div class="loading"></div>
 					</div>
 				</div>
