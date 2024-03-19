@@ -4,20 +4,20 @@
 		<div id="index-nav">
 			<ul class="nav-menu-items">
 				<li class="nav-menu-item {if condition="$maccms.aid eq 1"}selected{/if}">
-					<a href="{$maccms.path}" class="black " title="{$maccms.site_name}首页"><i class="icon-home"></i>首页</a>
+					<a href="{$maccms.path}" class="black " title="{$maccms.site_name}首页"><i class="icon-home"></i>首页</a>&nbsp;&nbsp;
 				</li>
 				 {maccms:type num="4" order="asc" by="sort" ids="parent" flag="vod"}			
 				<li class="nav-menu-item {if condition="($vo.type_id eq $GLOBALS['type_id'] || $vo.type_id eq $GLOBALS['type_pid'])"}selected{/if}">
 					<a class="nav-link black" href="{:mac_url_type($vo)}">
-							{if stristr($vo['type_name'],'纪录片')==true||stristr($vo['parent']['type_name'],'纪录片')==true}<i class="iconfont icon-zhibo"></i>{elseif stristr($vo['type_name'],'直播')==true||stristr($vo['parent']['type_name'],'直播')==true}<i class="iconfont icon-qiepian"></i>{elseif stristr($vo['type_name'],'美剧')==true||stristr($vo['parent']['type_name'],'美剧')==true}<i class="iconfont icon-qita"></i>{else}					    
+							{if stristr($vo['type_name'],'纪录片')==true||stristr($vo['parent']['type_name'],'纪录片')==true}<i class="iconfont icon-zhibo"></i>&nbsp;&nbsp;{elseif stristr($vo['type_name'],'直播')==true||stristr($vo['parent']['type_name'],'直播')==true}<i class="iconfont icon-qiepian"></i>&nbsp;&nbsp;{elseif stristr($vo['type_name'],'美剧')==true||stristr($vo['parent']['type_name'],'美剧')==true}<i class="iconfont icon-qita"></i>&nbsp;&nbsp;{else}
 					    	{if condition="$vo.type_id eq 1"}
-	                        <i class="icon-cate-dy"></i>
+	                        <i class="icon-cate-dy"></i>&nbsp;&nbsp;
 	                        {elseif condition="$vo.type_id eq 2"}
-	                        <i class="icon-cate-ds"></i>
+	                        <i class="icon-cate-ds"></i>&nbsp;&nbsp;
 	                        {elseif condition="$vo.type_id eq 4"}
-	                        <i class="icon-cate-dm"></i>
+	                        <i class="icon-cate-dm"></i>&nbsp;&nbsp;
 	                        {else}
-	                        <i class="icon-cate-zy"></i>
+	                        <i class="icon-cate-zy"></i>&nbsp;&nbsp;
 	                        {/if} {/if}
 					{$vo.type_name} </a>
 				</li>
