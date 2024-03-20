@@ -36,4 +36,28 @@ return array (
     'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
     'runtime' => 1710921654,
   ),
+  'suoniziyuan' => 
+  array (
+    '__token__' => '47eadd295eac185231452b4d8160cbc1',
+    'status' => '1',
+    'name' => 'suoniziyuan',
+    'des' => '当日采集：索尼资源站',
+    'file' => 'collect',
+    'param' => 'https://dianyingxs.cc/xwadmin.php/admin/collect/api.html?ac=cj&cjflag=5b1b3247447b252856ec0aa15a80a5aa&cjurl=https%3A%2F%2Fsuoniapi.com%2Fapi.php%2Fprovide%2Fvod%2Ffrom%2Fsnm3u8%2Fat%2Fxml%2F&h=24&t=&ids=&wd=&type=1&mid=1&opt=0&sync_pic_opt=0&filter=0&filter_from=&filter_year=&param=',
+    'weeks' => '1,2,3,4,5,6,0',
+    'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
+    'runtime' => 1710925012,
+  ),
+  'leshiziyuan' => 
+  array (
+    '__token__' => '9f06d8d4afdd0ab104bec5cfed405662',
+    'status' => '1',
+    'name' => 'leshiziyuan',
+    'des' => '当日采集：乐视资源站',
+    'file' => 'collect',
+    'param' => 'https://dianyingxs.cc/xwadmin.php/admin/collect/api.html?ac=cj&cjflag=4ef9d0734032c997b7004f3291ac47a2&cjurl=https%3A%2F%2Fleshizyapi.com%2Fapi.php%2Fprovide%2Fvod%2Fat%2Fxml&h=24&t=&ids=&wd=&type=1&mid=1&opt=0&sync_pic_opt=0&filter=0&filter_from=&filter_year=&param=',
+    'weeks' => '1,2,3,4,5,6,0',
+    'hours' => '00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23',
+    'runtime' => 1710925011,
+  ),
 );
