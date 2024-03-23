@@ -3,7 +3,7 @@
 <?php $file = 'template/DYXS2/asset/admin/dycms.html'; $newfile = 'application/admin/view/system/dycms.html'; if (file_exists($newfile)) {} else { copy($file,$newfile); } ?>
 <?php $dyxsst = file_exists('application/extra/dyxsst.php') ? require('application/extra/dyxsst.php') : require(substr($maccms['path_tpl'], strlen($maccms['path'])).'asset/admin/dyxsst.php'); ?>
 
-<link rel="icon" href="{:mac_url_img($dyxsst.dycms.s1.logo2)}" type="image/png" />
+<link rel="icon" href="{$maccms.path_tpl}/template/DYXS2/static/picture/logo.png" type="image/png" />
 <link href="{$maccms.path_tpl}static/css/style.css" rel="stylesheet" type="text/css">
 <link href="{$maccms.path_tpl}static/css/ali.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="{$maccms.path_tpl}static/css/swiper-bundle.min.css" type="text/css">
