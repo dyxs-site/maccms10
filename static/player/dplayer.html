@@ -37,16 +37,29 @@
 
     var dp = new DPlayer({
         container: document.getElementById('playerCnt'),
+		airplay: true,
         autoplay: true,
-        screenshot: false,
-        video: {
-            url: parent.MacPlayer.PlayUrl,
-            live: live,
-            type:type
-        },
-        contextmenu: [
-
-        ]
+		hotkey: true,
+		lang: 'zh-cn',
+		preload: 'auto',
+		logo: 'https://dianyingxs.cc/template/DYXS2/static/picture/index_logo.png',
+		volume: 0.7,
+		screenshot: true,
+		video: {
+			url: parent.MacPlayer.PlayUrl,
+			live: live,
+			type:type
+		},
+		contextmenu: [
+			{
+				text: '电影先生',
+				link: '//dianyingxs.cc',
+			},
+			{
+				text: 'DianYingXs.cc',
+				link: '//dianyingxs.cc',
+			},
+		],
     });
     
     dp.on('ended',function(){
