@@ -25,7 +25,7 @@
 		<nav class="nav-menu">
 			<ul class="nav-menu-items">
 				<li class="nav-menu-item {if condition="$maccms.aid eq 1"}selected{/if}">
-					<a href="{$maccms.path}" class="white " title="{$maccms.site_name}首页"><i class="icon-home"></i>&nbsp;>&nbsp;首页</a>
+					<a href="{$maccms.path}" class="white " title="{$maccms.site_name}首页"><i class="icon-home"></i>&nbsp;&nbsp;首页</a>
 				</li>
 				 {maccms:type num="4" order="asc" by="sort" ids="parent" flag="vod"}			
 				<li class="nav-menu-item {if condition="($vo.type_id eq $GLOBALS['type_id'] || $vo.type_id eq $GLOBALS['type_pid'])"}selected{/if}">
