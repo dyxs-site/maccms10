@@ -13,4 +13,5 @@ return array (
   10 => 'Videojs设置,videojs/set',
   11 => 'CkplayerX3设置,player/ckplayerx3',
   12 => 'Aliplayer设置,aliplayer/set',
+  13 => 'Dplayer设置,dplayer/set',
 );

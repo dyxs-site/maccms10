@@ -9,7 +9,7 @@ return array (
     array (
       'width' => '150px',
       'height' => '50px',
-      'position' => 'right',
+      'position' => 'left',
     ),
     'jump_head' => '',
     'ads' => 
@@ -17,13 +17,11 @@ return array (
       'group' => '',
       'pre' => 
       array (
-        'state' => '',
         'url' => '',
         'link' => '',
       ),
       'pause' => 
       array (
-        'state' => '',
         'url' => '',
         'link' => '',
       ),
