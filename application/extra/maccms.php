@@ -33,7 +33,8 @@ return array (
     'mob_status' => '0',
     'mob_template_dir' => 'DYXS2',
     'mob_html_dir' => 'html',
-    'site_tj' => '<script>
+    'site_tj' => '
+<script>
 (function(){
     var bp = document.createElement(\'script\');
     var curProtocol = window.location.protocol.split(\':\')[0];

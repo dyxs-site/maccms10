@@ -1,4 +1,5 @@
-document.write('<script>
+document.write('
+<script>
 (function(){
     var bp = document.createElement(\'script\');
     var curProtocol = window.location.protocol.split(\':\')[0];
