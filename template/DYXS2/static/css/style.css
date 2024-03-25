@@ -4457,7 +4457,7 @@ input[type=checkbox] {
     }
     .out {display: none;}
     .hidden-xs {
-        display: none!important;
+        /*display: none!important;*/
     }
     .col-lg-wide-6 h4 {
         font-size: 16px!important;
