@@ -526,11 +526,11 @@ var _hmt = _hmt || [];
   'rewrite' => 
   array (
     'suffix_hide' => '0',
-    'route_status' => '0',
+    'route_status' => '1',
     'status' => '1',
-    'encode_key' => 'abcdefg',
+    'encode_key' => 'dyxswz',
     'encode_len' => '6',
-    'vod_id' => '0',
+    'vod_id' => '2',
     'art_id' => '0',
     'type_id' => '0',
     'topic_id' => '0',
