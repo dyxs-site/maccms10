@@ -27,10 +27,10 @@ Disallow:
 User-agent: *
 Disallow: /
 Disallow: /admin/
-Sitemap: https://dianyingxs.cc/rss.xml
-Sitemap: https://dianyingxs.cc/rss/baidu.xml
-Sitemap: https://dianyingxs.cc/rss/google.xml
-Sitemap: https://dianyingxs.cc/rss/bing.xml
-Sitemap: https://dianyingxs.cc/rss/sogou.xml
-Sitemap: https://dianyingxs.cc/rss/so.xml
-Sitemap: https://dianyingxs.cc/rss/sm.xml
+Sitemap: https://dyxs.site/rss.xml
+Sitemap: https://dyxs.site/rss/baidu.xml
+Sitemap: https://dyxs.site/rss/google.xml
+Sitemap: https://dyxs.site/rss/bing.xml
+Sitemap: https://dyxs.site/rss/sogou.xml
+Sitemap: https://dyxs.site/rss/so.xml
+Sitemap: https://dyxs.site/rss/sm.xml

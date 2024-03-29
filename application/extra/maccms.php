@@ -17,11 +17,11 @@ return array (
   ),
   'site' => 
   array (
-    'site_name' => '大眼先生 - dyxs.site 在线 播放 观看',
+    'site_name' => '电影西施 - dyxs.site 在线 播放 观看',
     'site_url' => 'dyxs.site',
     'site_wapurl' => 'dyxs.site',
-    'site_keywords' => '大眼先生,在线播放,在线观看,百度网盘,免费视频,在线视频,预告片,dyxs.site',
-    'site_description' => '大眼先生提供最新最快的视频分享数据-dyxs.site',
+    'site_keywords' => '电影西施,在线播放,在线观看,百度网盘,免费视频,在线视频,预告片,dyxs.site',
+    'site_description' => '电影西施提供最新最快的视频分享数据-dyxs.site',
     'site_icp' => '',
     'site_qq' => '',
     'site_email' => 'mail@dyxs.site',
@@ -627,8 +627,8 @@ plotdetail/<id>   => plot/detail',
     'widthpop' => '0',
     'heightpop' => '600',
     'second' => '5',
-    'prestrain' => '//dianyingxs.cc/static/player/prestrain.html',
-    'buffer' => '//dianyingxs.cc/static/player/loading.html',
+    'prestrain' => '//dyxs.site/static/player/prestrain.html',
+    'buffer' => '//dyxs.site/static/player/loading.html',
     'parse' => '',
     'autofull' => '0',
     'showtop' => '1',
@@ -661,39 +661,39 @@ plotdetail/<id>   => plot/detail',
   array (
     'vod' => 
     array (
-      'name' => '大眼先生',
-      'key' => '大眼先生,短视频,搞笑视频,视频分享,免费视频,在线视频,预告片',
-      'des' => '大眼先生提供最新最快的视频分享数据',
+      'name' => '电影西施',
+      'key' => '电影西施,短视频,搞笑视频,视频分享,免费视频,在线视频,预告片',
+      'des' => '电影西施提供最新最快的视频分享数据',
     ),
     'art' => 
     array (
-      'name' => '大眼先生-文章首页',
-      'key' => '大眼先生,新闻资讯,娱乐新闻,八卦娱乐,狗仔队,重大事件',
-      'des' => '大眼先生提供最新最快的新闻资讯',
+      'name' => '电影西施-文章首页',
+      'key' => '电影西施,新闻资讯,娱乐新闻,八卦娱乐,狗仔队,重大事件',
+      'des' => '电影西施提供最新最快的新闻资讯',
     ),
     'actor' => 
     array (
-      'name' => '大眼先生-演员首页',
-      'key' => '大眼先生,大陆明星,港台明星,日韩明星,欧美明星,最火明星',
-      'des' => '大眼先生明星个人信息介绍',
+      'name' => '电影西施-演员首页',
+      'key' => '电影西施,大陆明星,港台明星,日韩明星,欧美明星,最火明星',
+      'des' => '电影西施明星个人信息介绍',
     ),
     'role' => 
     array (
-      'name' => '大眼先生-角色首页',
-      'key' => '大眼先生,电影角色,电视剧角色,动漫角色,综艺角色',
-      'des' => '大眼先生角色人物介绍',
+      'name' => '电影西施-角色首页',
+      'key' => '电影西施,电影角色,电视剧角色,动漫角色,综艺角色',
+      'des' => '电影西施角色人物介绍',
     ),
     'plot' => 
     array (
-      'name' => '大眼先生-剧情首页',
-      'key' => '大眼先生,剧情连载,剧情更新,剧情前瞻,剧情完结',
-      'des' => '大眼先生提供最新的剧情信息',
+      'name' => '电影西施-剧情首页',
+      'key' => '电影西施,剧情连载,剧情更新,剧情前瞻,剧情完结',
+      'des' => '电影西施提供最新的剧情信息',
     ),
     'website' => 
     array (
-      'name' => '大眼先生',
-      'key' => '大眼先生',
-      'des' => '大眼先生',
+      'name' => '电影西施',
+      'key' => '电影西施',
+      'des' => '电影西施',
     ),
   ),
   'urlsend' => 

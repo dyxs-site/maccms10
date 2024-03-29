@@ -98,7 +98,7 @@ return array (
     array (
       'btn' => '1',
       'title' => '网站公告',
-      'content' => '欢迎使用电影先生，官方网站：<span class=\'hl-text-conch\'>dianyingxs.cc</span>，点击我知道了，弹窗当天不在弹出！',
+      'content' => '欢迎使用电影西施，官方网站：<span class=\'hl-text-conch\'>dyxs.site</span>，点击我知道了，弹窗当天不在弹出！',
     ),
     'share' => 
     array (
@@ -218,7 +218,7 @@ return array (
     'notice' => 
     array (
       'btn' => '1',
-      'text' => '欢迎使用电影先生，官方网站：<span class=\'hl-text-conch\'>dianyingxs.cc</span>',
+      'text' => '欢迎使用电影西施，官方网站：<span class=\'hl-text-conch\'>dyxs.site</span>',
     ),
   ),
   'nav' => 
@@ -261,8 +261,8 @@ return array (
     'level' => 
     array (
       'PC' => '1',
-      'title' => '电影先生',
-      'link' => 'http://dianyingxs.cc',
+      'title' => '电影西施',
+      'link' => 'http://dyxs.site',
       'pic' => 'template/conch/asset/img/hailuo.png',
     ),
     'custom' => 
