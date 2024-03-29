@@ -24,9 +24,9 @@ return array (
       'diy2url' => 'https://sogou.com/',
       'slide' => '0',
       'about' => '0',
-      'web1' => 'www.dianyingxs.cc',
+      'web1' => 'dianyingxs.cc',
       'web2' => 'v.dianyingxs.cc',
-      'web3' => 'dyxs.site',
+      'web3' => 'www.dianyingxs.cc',
       'tc' => '0',
       'tc_noti' => '<p>电影先生提示您</p>
 <p>欢迎体验</p>
