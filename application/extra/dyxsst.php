@@ -7,7 +7,7 @@ return array (
       'logo1' => 'template/DYXS2/static/picture/index_logo.png',
       'logo2' => 'template/DYXS2/static/picture/logo-s.png',
       'pic' => 'template/DYXS2/static/picture/loading.png',
-      'gg' => '电影先生｜dianyingxs.cc',
+      'gg' => '大眼先生｜dyxs.site',
       'sm' => '本站所有内容均来自互联网分享站点所提供的公开引用资源，未提供资源上传、存储服务。',
     ),
     's2' => 
