@@ -9,7 +9,11 @@
     <nav class="nav-menu">
       <ul class="nav-menu-items">
       <li class="nav-menu-item {if condition="$maccms.aid eq 1"}selected{/if}">
-		<a class="nav-link" href="{$maccms.path}" title="{$maccms.site_name}首页"><i class="icon-home"></i>&nbsp;&nbsp;首页</a>
+		<a class="nav-link" href="{$maccms.path}" title="{$maccms.site_name}首页">
+			<span class="nav-menu-item-name">
+				<i class="icon-home"></i>&nbsp;&nbsp;首页
+			</span>
+		</a>
 	</li>
       {maccms:type  order="asc" by="sort" ids="parent" flag="vod"}			
 	    <li class="nav-menu-item {if condition="($vo.type_id eq $GLOBALS['type_id'] || $vo.type_id eq $GLOBALS['type_pid'])"}selected{/if}">
