@@ -258,7 +258,7 @@ return array (
     array (
     ),
   ),
-  'vodtype/<id>-<page?>' => 
+  'v/<id>-<page?>' => 
   array (
     0 => 'vod/type',
     1 => 
@@ -268,7 +268,7 @@ return array (
     array (
     ),
   ),
-  'vodtype/<id>' => 
+  'v/<id>' => 
   array (
     0 => 'vod/type',
     1 => 
@@ -278,7 +278,7 @@ return array (
     array (
     ),
   ),
-  'voddetail/<id>' => 
+  'show-<id>' => 
   array (
     0 => 'vod/detail',
     1 => 
@@ -298,7 +298,7 @@ return array (
     array (
     ),
   ),
-  'vodplay/<id>-<sid>-<nid>' => 
+  'play-<id>-<sid>-<nid>' => 
   array (
     0 => 'vod/play',
     1 => 
@@ -318,7 +318,7 @@ return array (
     array (
     ),
   ),
-  'vodshow/<id>-<area?>-<by?>-<class?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>' => 
+  'pianku-<id>-<area?>-<by?>-<class?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>' => 
   array (
     0 => 'vod/show',
     1 => 
@@ -328,7 +328,7 @@ return array (
     array (
     ),
   ),
-  'vodsearch/<wd?>-<actor?>-<area?>-<by?>-<class?>-<director?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>' => 
+  'search-<wd?>-<actor?>-<area?>-<by?>-<class?>-<director?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>' => 
   array (
     0 => 'vod/search',
     1 => 

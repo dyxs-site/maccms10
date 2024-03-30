@@ -566,14 +566,14 @@ roledetail-<id>   => role/detail
 roleshow/<by?>-<letter?>-<level?>-<order?>-<page?>-<rid?>   => role/show
 
 
-vodtype/<id>-<page?>   => vod/type
-vodtype/<id>   => vod/type
-voddetail/<id>   => vod/detail
+v/<id>-<page?>   => vod/type
+v/<id>   => vod/type
+show-<id>   => vod/detail
 vodrss-<id>   => vod/rss
-vodplay/<id>-<sid>-<nid>   => vod/play
+play-<id>-<sid>-<nid>   => vod/play
 voddown/<id>-<sid>-<nid>   => vod/down
-vodshow/<id>-<area?>-<by?>-<class?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>   => vod/show
-vodsearch/<wd?>-<actor?>-<area?>-<by?>-<class?>-<director?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>   => vod/search
+pianku-<id>-<area?>-<by?>-<class?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>   => vod/show
+search-<wd?>-<actor?>-<area?>-<by?>-<class?>-<director?>-<lang?>-<letter?>-<level?>-<order?>-<page?>-<state?>-<tag?>-<year?>   => vod/search
 vodplot/<id>-<page?>   => vod/plot
 vodplot/<id>   => vod/plot
 
