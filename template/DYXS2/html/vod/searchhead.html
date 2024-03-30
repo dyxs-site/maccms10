@@ -9,27 +9,27 @@
     <nav class="nav-menu">
       <ul class="nav-menu-items">
       <li class="nav-menu-item {if condition="$maccms.aid eq 1"}selected{/if}">
-		<a href="{$maccms.path}" title="{$maccms.site_name}首页"><i class="icon-home"></i>首页</a>
+		<a class="nav-link" href="{$maccms.path}" title="{$maccms.site_name}首页"><i class="icon-home"></i>&nbsp;&nbsp;首页</a>
 	</li>
       {maccms:type  order="asc" by="sort" ids="parent" flag="vod"}			
 	    <li class="nav-menu-item {if condition="($vo.type_id eq $GLOBALS['type_id'] || $vo.type_id eq $GLOBALS['type_pid'])"}selected{/if}">
 		<a class="nav-link" href="{:mac_url_type($vo)}"><span class="nav-menu-item-name">
 		    	            {if condition="$vo.type_id eq 1"}
-	                        <i class="icon-cate-dy"></i>
+	                        <i class="icon-cate-dy"></i>&nbsp;&nbsp;
 	                        {elseif condition="$vo.type_id eq 2"}
-	                        <i class="icon-cate-ds"></i>
+	                        <i class="icon-cate-ds"></i>&nbsp;&nbsp;
 	                        {elseif condition="$vo.type_id eq 4"}
-	                        <i class="icon-cate-dm"></i>
+	                        <i class="icon-cate-dm"></i>&nbsp;&nbsp;
 	                        {else}
-	                        <i class="icon-cate-zy"></i>
+	                        <i class="icon-cate-zy"></i>&nbsp;&nbsp;
 	                        {/if}
 		    {$vo.type_name} </span> </a>
 		</li>
 		{/maccms:type}	
-		<li class="nav-menu-item domain"><span class="nav-menu-item-name"><i class="icon-domain"></i>网址</span><em>+</em></li>
+		<li class="nav-menu-item domain"><span class="nav-menu-item-name"><i class="icon-domain"></i>&nbsp;&nbsp;网址</span><em>+</em></li>
 				<li class="space-line-bold"></li>
 				<li class="nav-menu-item">
-				<a class="nav-menu-item-name"  href="{:mac_url('label/app')}" title="下载{$maccms.site_name}APP"><i class="icon-app"></i>APP</a>
+				<a class="nav-menu-item-name"  href="{:mac_url('label/app')}" title="下载{$maccms.site_name}APP"><i class="icon-app"></i>&nbsp;&nbsp;APP</a>
 				</li>
         <li class="nav-menu-item drop"><span class="nav-menu-icon"><i class="icon-all"></i></span>
           <div class="drop-content sub-block">
