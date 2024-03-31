@@ -16,6 +16,8 @@
 	                        <i class="icon-cate-ds"></i>&nbsp;&nbsp;
 	                        {elseif condition="$vo.type_id eq 4"}
 	                        <i class="icon-cate-dm"></i>&nbsp;&nbsp;
+							{elseif condition="$vo.type_id eq 19"}
+							<i class="icon-play"></i>&nbsp;&nbsp;
 	                        {else}
 	                        <i class="icon-cate-zy"></i>&nbsp;&nbsp;
 	                        {/if} {/if}
@@ -72,7 +74,7 @@
 								<li  class="grid-item">
 								<a href="{:mac_url_type($vo)}" title="{$vo.type_name}">
 							{if stristr($vo['type_name'],'纪录片')==true||stristr($vo['parent']['type_name'],'纪录片')==true}<i class="iconfont icon-zhibo"></i>{elseif stristr($vo['type_name'],'直播')==true||stristr($vo['parent']['type_name'],'直播')==true}<i class="iconfont icon-qiepian"></i>{elseif stristr($vo['type_name'],'美剧')==true||stristr($vo['parent']['type_name'],'美剧')==true}<i class="iconfont icon-qita"></i>{else}
-							<i class="{switch name="vo.type_id"}{case value="1"}icon-cate-dy{/case}{case value="2"}icon-cate-ds{/case}{case value="3"}icon-cate-zy{/case}{case value="4"}icon-cate-dm{/case}{case value="5"}iconfont icon-zixun{/case}{default/}icon-zixun{/switch}"></i>{/if}
+							<i class="{switch name="vo.type_id"}{case value="1"}icon-cate-dy{/case}{case value="2"}icon-cate-ds{/case}{case value="3"}icon-cate-zy{/case}{case value="4"}icon-cate-dm{/case}{case value="19"}icon-play{/case}{case value="5"}iconfont icon-zixun{/case}{default/}icon-zixun{/switch}"></i>{/if}
 									<div class="grid-item-name">{$vo.type_name}</div>
 									</a>
 								</li>
