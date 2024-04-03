@@ -3002,12 +3002,16 @@ input[type=checkbox] {
 }
 
 .nfmsg::before {
-	right: 10px;
-	top: 15px;
+	right: 0px;
+	left: 0px;
+	margin: 0 auto;
+	top: 5px;
 	background: url(../image/logo.png);
 	filter: blur(10px);
 	background-size: cover;
-	opacity: .18
+	opacity: .38;
+	width: 460px;
+	height: 130px;
 }
 
 .nfmsg::after {
