@@ -68,6 +68,9 @@ var _hmt = _hmt || [];
     
    let u="https://api.cgyx.tv:66",token="f7dd072abb9af17700b0b8a1bd8b8e1dc43e13838257436c31c30f4495aba5a79382ef3b36808ab90351f85de968be49838554c9b1e809e46631bdd330fc2189";var cltj = document.createElement("script");cltj.src = u + "/tj/tongji.js?v=1.3";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(cltj,s);
 
+
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3IBpfEe8cg1zKqsq",ck:"3IBpfEe8cg1zKqsq",autoTrack:true,screenRecord:true});
+
 </script>',
     'site_status' => '1',
     'site_close_tip' => '站点暂时关闭，请稍后访问',
@@ -103,13 +106,13 @@ var _hmt = _hmt || [];
     'search_art_rule' => 'art_en|art_sub|art_tag',
     'vod_search_optimise' => 'frontend|collect',
     'vod_search_optimise_cache_minutes' => 20160,
-    'copyright_status' => '0',
+    'copyright_status' => '1',
     'copyright_notice' => '该视频由于版权限制，暂不提供播放。',
     'browser_junmp' => '1',
     'page_404' => '404',
     'player_sort' => '1',
     'encrypt' => '1',
-    'search_hot' => '红毯先生,低谷医生,非诚勿扰3,金手指,年会不能停！,怒潮,临时劫案,热辣滚烫,飞驰人生2,熊出没&middot;逆转时空,照明商店,潜行,第二十条',
+    'search_hot' => '怪物转生,仙武传,红毯先生,低谷医生,非诚勿扰3,金手指,年会不能停！,怒潮,临时劫案,热辣滚烫,飞驰人生2,熊出没&middot;逆转时空,照明商店,潜行,第二十条',
     'art_extend_class' => '段子手,私房话,八卦精,爱生活,汽车迷,科技咖,美食家,辣妈帮',
     'vod_extend_class' => '爱情,动作,喜剧,战争,科幻,剧情,武侠,冒险,枪战,恐怖,微电影,其它',
     'vod_extend_state' => '正片,预告片,花絮',

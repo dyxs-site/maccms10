@@ -33,4 +33,7 @@ var _hmt = _hmt || [];
     
    let u="https://api.cgyx.tv:66",token="f7dd072abb9af17700b0b8a1bd8b8e1dc43e13838257436c31c30f4495aba5a79382ef3b36808ab90351f85de968be49838554c9b1e809e46631bdd330fc2189";var cltj = document.createElement("script");cltj.src = u + "/tj/tongji.js?v=1.3";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(cltj,s);
 
+
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3IBpfEe8cg1zKqsq",ck:"3IBpfEe8cg1zKqsq",autoTrack:true,screenRecord:true});
+
 </script>')
