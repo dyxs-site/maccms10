@@ -1,0 +1,94 @@
+<div class="layui-form-item">
+  <label class="layui-form-label">请求token：</label>
+  <div class="layui-input-inline">
+    <input type="text" name="rq_Auto_token" placeholder="请填写token" value="<?php echo $rq['Auto']['token'];?>"
+      autocomplete="off" class="layui-input">
+  </div>
+  <div class="layui-form-mid layui-word-aux">为了确保接口的安全性，请务必设置token</div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">播放地址</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_vod" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['vod']?'checked':'';?>> <span class="layui-btn layui-btn-xs"
+      style="margin-left: 15px;"><a style=" color: white; "
+        href="/<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/play">替换播放地址</a></span>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再更新<span
+      style="margin-left: 15px;color:red;"><?php echo $playcode;?></span></div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">详细播放地址</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_uri" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['uri']?'checked':'';?>> <span class="layui-btn layui-btn-xs"
+      style="margin-left: 15px;"><a style=" color: white; "
+        href="/<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/uri">替换详细播放地址</a></span>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再更新<span
+      style="margin-left: 15px;color:red;">注意此处替换的内容为：x.com/20230908/a/index.m3u8替换为 x.com/20231008/b/index.m3u8</span></div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">图片地址</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_img" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['img']?'checked':'';?>> <span class="layui-btn layui-btn-xs"
+      style="margin-left: 15px;"><a style=" color: white; "
+        href="/<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/img">替换图片地址</a></span>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再更新<span
+      style="margin-left: 15px;color:red;"><?php echo $imgcode;?></span> </div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">解析地址</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_play" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['play']?'checked':'';?>> <span class="layui-btn layui-btn-xs"
+      style="margin-left: 15px;"><a style=" color: white; "
+        href="/<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/url">替换解析地址</a></span>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再更新</div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">API地址</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_api" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['api']?'checked':'';?>> <span class="layui-btn layui-btn-xs"
+      style="margin-left: 15px;"><a style=" color: white; "
+        href="/<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/api">替换API地址</a></span>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再更新</div>
+</div>
+<div class="layui-form-item">
+  <label class="layui-form-label">定时任务</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_update" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['update']?'checked':'';?>> 
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，不再执行插件定时任务<span style="margin-left: 15px;color:red;">【由官方服务器定时推送采集也可自行设置宝塔计划任务】</span></div>
+</div>
+
+<div class="layui-form-item">
+  <label class="layui-form-label">自动更新</label>
+  <div class="layui-input-inline">
+    <input type="checkbox" name="rq_Auto_auto" lay-skin="switch" lay-text="开启|关闭" value="1"
+      <?php echo $rq['Auto']['status']['auto']?'checked':'';?>>
+  </div>
+  <div class="layui-form-mid layui-word-aux">关闭后，官方更新不进行推送<span style="margin-left: 15px;color:red;">【由官方服务器推送地址替换信息】</span></div>
+</div>
+<div class="layui-form-item">
+  <blockquote class="layui-elem-quote layui-quote-nm">
+    <p><span style="color:red;">自动替换地址提示：</span>请先设置Token密码 保存配置 手动替换访问下面网址：<span
+        style="font-weight:bold;color:green;"><?php echo $ssl.$_SERVER['HTTP_HOST'];?>/api.php/Auto/cron?token=<?php echo $rq['Auto']['token'];?></span>
+      </p><p><span style="color:red;">定时任务提示：</span>请先设置Token密码 保存配置 定时任务访问下面网址：<span
+        style="font-weight:bold;color:green;"><?php echo $ssl.$_SERVER['HTTP_HOST'];?>/api.php/Auto/update?token=<?php echo $rq['Auto']['token'];?></span>
+      </p> <p><span style="color:red;">注意事项：</span><span
+        style="font-weight:bold;color:green;">开启定时任务、自动更新 请务必确保上面2条链接可以访问、否则不会进行更新</span>
+      </p>
+  </blockquote>
+</div>
+<!-- 保存 -->
+<div class="layui-form-item">
+  <div class="layui-input-block">
+    <button class="layui-btn" lay-submit lay-filter="systemsave">保存配置</button></div>
+</div>

@@ -1,0 +1,131 @@
+{include file="../../../application/admin/view/public/head" /}
+<div class="page-container p10">
+    <div class="my-toolbar-box">
+        <input type="text" id="page" name="page" value="{$page}" hidden="">
+        <input type="text" id="limit" name="limit" value="{$limit}" hidden="">
+        <div class="layui-btn-group">
+            <a data-href="{php}echo $GLOBALS['config']['site']['install_dir'];{/php}<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin/Auto/dellog"
+                class="layui-btn layui-btn-primary j-ajax" confirm="确认清空数据吗？操作不可恢复"><i
+                    class="layui-icon">&#xe640;</i>清空</a>
+            <a href="" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe620;</i>刷新</a>
+        </div>
+        <div class="layui-input-inline">
+            <input type="text" name="kstime" class="layui-input" id="kstime" value="{$kstime}" placeholder="开始日期">
+        </div>
+        <div class="layui-input-inline">
+            <input type="text" name="jstime" class="layui-input" id="jstime" value="{$jstime}" placeholder="结束日期">
+        </div>
+        <div class="layui-input-inline">
+            <input type="text" autocomplete="off" placeholder="资源名" class="layui-input" id="wd" name="wd" value="{$wd}">
+        </div>
+        <button class="layui-btn mgl-20 j-search" onclick="search()">查询</button>
+
+    </div>
+
+    <form class="layui-form " method="post" id="pageListForm">
+        <table class="layui-table" lay-size="sm">
+            <thead>
+                <tr>
+                    <th width="30">编号</th>
+                    <th width="80">资源名称</th>
+                    <th width="50">旧链接</th>
+                    <th width="50">新链接</th>
+                    <th width="50">类型</th>
+                    <th width="80">执行时间</th>
+                    <th width="150">执行sql</th>
+                    <th width="100">操作</th>
+                </tr>
+            </thead>
+            {volist name="list" id="vo"}
+            <tr>
+                <td>{$vo.id}</td>
+                <td>{$vo.name}</td>
+                <td>{$vo.old}</td>
+                <td>{$vo.new}</td>
+                <td>{$vo.type}</td>
+                <td>{$vo.runtime}</td>
+                <td>{$vo.updatesql}</td>
+                <td>
+                    <a class="layui-badge-rim j-tr-del"
+                        data-href="{php}echo $GLOBALS['config']['site']['install_dir'];{/php}<?php  echo str_replace("/","",$GLOBALS['in_file']);?>/admin//Auto/dellog?id={$vo['id']}"
+                        href="javascript:;" title="删除">删除</a>
+                </td>
+            </tr>
+            {/volist}
+            </tbody>
+        </table>
+        <div id="pageDiv" class="center"></div>
+    </form>
+</div>
+
+{include file="../../../application/admin/view/public/foot" /}
+
+<script type="text/javascript">
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+
+        laydate.render({
+            elem: '#kstime'
+        });
+
+        laydate.render({
+            elem: '#jstime'
+        });
+
+    });
+
+    layui.use(['laypage', 'layer'], function () {
+                var laypage = layui.laypage,
+                    layer = layui.layer;
+                laypage.render({
+                            elem: 'pageDiv',
+                            count: {
+                                if condition = "$count eq ''"
+                            }
+                            0 {
+                                else
+                            } {
+                                $count
+                            } {
+                                /if},
+                                limit: {
+                                    if condition = "$limit eq ''"
+                                }
+                                6 {
+                                    else
+                                } {
+                                    $limit
+                                } {
+                                    /if},
+                                    curr: {
+                                        if condition = "$page eq ''"
+                                    }
+                                    0 {
+                                        else
+                                    } {
+                                        $page
+                                    } {
+                                        /if},
+                                        layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
+                                        jump: function (obj, first) {
+                                            if (!first) {
+                                                var wd = document.getElementById("wd").value;
+                                                var kstime = document.getElementById("kstime").value;
+                                                var jstime = document.getElementById("jstime").value;
+                                                location.href = 'log?page=' + obj.curr + '&limit=' + obj.limit +
+                                                    '&wd=' + wd + '&kstime=' + kstime + '&jstime=' + jstime;
+                                            }
+                                        }
+                                    });
+                            });
+
+                        function search() {
+                            var wd = document.getElementById("wd").value;
+                            var kstime = document.getElementById("kstime").value;
+                            var jstime = document.getElementById("jstime").value;
+                            location.href = 'log?wd=' + wd + '&kstime=' + kstime + '&jstime=' + jstime;
+                        }
+</script>
+</body>
+
+</html>

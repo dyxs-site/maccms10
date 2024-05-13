@@ -14,4 +14,5 @@ return array (
   11 => 'CkplayerX3设置,player/ckplayerx3',
   12 => 'Aliplayer设置,aliplayer/set',
   13 => 'Dplayer设置,dplayer/set',
+  14 => '牛牛助手,auto/index',
 );
