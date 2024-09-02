@@ -27,8 +27,8 @@ Disallow:
 User-agent: *
 Disallow: /
 Disallow: /admin/
-Sitemap: https://dyxs.site/rss.xml
-Sitemap: https://dyxs.site/rss/baidu.xml
+Sitemap: https://ethanyep.cn/rss.xml
+Sitemap: https://ethanyep.cn/rss/baidu.xml
 Sitemap: https://dyxs.site/rss/google.xml
 Sitemap: https://dyxs.site/rss/bing.xml
 Sitemap: https://dyxs.site/rss/sogou.xml

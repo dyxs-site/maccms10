@@ -1,4 +1,6 @@
-document.write('<script>
+document.write('<script defer src="https://umami.dianyingxs.cc/script.js" data-website-id="7e0fb196-5561-498b-b881-5de0acf5c6e7"></script>
+<script>
+
 (function(){
 var el = document.createElement("script");
 el.src = "https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?ed3d9ff078b4c4b76d9802b12af1abd05f45fa2bca5d2bc46b17b3360fb41dae3d72cd14f8a76432df3935ab77ec54f830517b3cb210f7fd334f50ccb772134a";
