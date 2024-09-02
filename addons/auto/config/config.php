@@ -9,7 +9,7 @@ $rq=array (
     array (
       'vod' => '1',
       'img' => '1',
-      'play' => NULL,
+      'play' => '1',
       'api' => NULL,
       'uri' => '1',
       'auto' => '1',
