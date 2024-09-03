@@ -50,7 +50,7 @@
                     <div class="hl-col-sm-8 hl-col-xs-12">
                         <div class="hl-foot-text hl-text-muted">
                             {$conch['theme']['text']['tips']}
-                            <p>联系邮箱：{$maccms.site_email}&nbsp;&nbsp;<span{if condition="$conch['theme']['tj']['btn'] eq 0"} class="hl-hide"{/if}>{$maccms.site_tj}</span></p>
+                            <p>联系邮箱：{$maccms.site_email}&nbsp;&nbsp;<span{if condition="$conch['theme']['tj']['btn'] eq 0"} class="hl-hide"{/if}>{:mac_adsense()}{$maccms.site_tj}</span></p>
                         </div>
                         <div class="hl-map-nav hl-text-site hl-hidden-xs">
                             <a href="{:mac_url('rss/index')}" target="_blank">RSS订阅</a>

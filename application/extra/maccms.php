@@ -69,9 +69,6 @@ var _hmt = _hmt || [];
 
 </script>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3085911356698359"
-     crossorigin="anonymous"></script>
-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2EGFD0TG7"></script>

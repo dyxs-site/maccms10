@@ -2442,6 +2442,55 @@ function mac_url($model,$param=[],$info=[])
 
     return $url;
 }
+
+// 谷歌广告处理
+function mac_adsense()
+{
+    $urls = [
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/1.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/21.html",
+        "dianyingxs.cc/vod/play/id/15031/sid/1/nid/1.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/16.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/23.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/24.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/22.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/20.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/19.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/15.html",
+        "dianyingxs.cc/vod/detail/id/134156.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/6.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/13.html",
+        "dianyingxs.cc/vod/play/id/131225/sid/1/nid/1.html",
+        "www.dianyingxs.cc/vod/play/id/129381/sid/3/nid/6.html",
+        "www.dianyingxs.cc/vod/detail/id/129381.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/2/nid/16.html",
+        "dianyingxs.cc/vod/play/id/134156/sid/1/nid/14.html",
+        "dianyingxs.cc/vod/play/id/132845/sid/1/nid/1.html",
+        "dianyingxs.cc/vod/play/id/132349/sid/1/nid/1.html",
+        "dianyingxs.cc/vod/detail/id/132845.html",
+        "dianyingxs.cc/vod/detail/id/130738.html"
+    ];
+    $processedUrls = array_map(function($url) {
+        // 使用 / 进行字符串切割
+        $parts = explode('/', $url);
+        // 丢弃第一个部分（域名）
+        array_shift($parts);
+        // 重新组合数组为字符串
+        return '/'.implode('/', $parts);
+    }, $urls);
+
+    // 使用 ? 分割 URL，丢弃查询参数部分
+    $requestUri = $_SERVER['REQUEST_URI'];
+    $urlParts = explode('?', $requestUri);
+    $path = $urlParts[0]; // 获取 URL 的路径部分
+    if (in_array($path,$processedUrls)){
+        return '被标记的广告，不能展示广告哦';
+    }else{
+        return '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3085911356698359"
+     crossorigin="anonymous"></script>';
+    }
+}
+
 function mac_url_page($url,$num)
 {
     $url = str_replace(MAC_PAGE_SP.'PAGELINK',($num>1 ? MAC_PAGE_SP.$num : ''),$url);
