@@ -1,4 +1,4 @@
-document.write('<script defer src="https://umami.dianyingxs.cc/script.js" data-website-id="0f4bac73-c2ce-4092-a8a8-e0e991f47d02"></script>
+document.write('<script defer src="https://umami.dyxs.site/script.js" data-website-id="ab26c8f4-8268-4848-8af0-681780c99a5c"></script>
 
 <meta name="shenma-site-verification" content="f10569c3b4b6c083565ff40e904d3edd_1717122674">
 <script>
