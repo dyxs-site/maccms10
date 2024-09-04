@@ -18,6 +18,25 @@ class Init
             $isMobile = 1;
         }
 
+        // 获取请求头
+        $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+        $referer = $_SERVER['HTTP_REFERER'] ?? '';
+        $requestUri = $_SERVER['REQUEST_URI'];
+
+        // 定义 User-Agent 和 Referer 的匹配规则
+        $isValidUserAgent = preg_match('/Baiduspider|Baidu|baidu\.com/i', $userAgent);
+        $isValidReferer = preg_match('/baidu\.com/i', $referer) || preg_match('/^\/rss/', $requestUri);
+
+        // 检查是否满足条件
+        if (!$isValidUserAgent && !$isValidReferer) {
+            // 如果 User-Agent 和 Referer 都不符合条件，返回 404
+            if($_SERVER['HTTP_HOST'] == 'ethanyep.cn' && $isMobile != 1){
+                header("HTTP/1.0 404 Not Found");
+                exit;
+            }
+        }
+
+
         $isDomain=0;
         if( is_array($domain) && !empty($domain[$_SERVER['HTTP_HOST']])){
             $config['site'] = array_merge($config['site'],$domain[$_SERVER['HTTP_HOST']]);

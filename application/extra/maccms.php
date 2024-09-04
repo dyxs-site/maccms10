@@ -33,7 +33,7 @@ return array (
     'mob_status' => '0',
     'mob_template_dir' => 'DYXS2',
     'mob_html_dir' => 'html',
-    'site_tj' => '<script defer src="https://umami.dianyingxs.cc/script.js" data-website-id="7e0fb196-5561-498b-b881-5de0acf5c6e7"></script>
+    'site_tj' => '<script defer src="https://umami.dyxs.site/script.js" data-website-id="fb7d6955-8480-4880-bcdd-4cd2292a7eb2"></script>
 <script>
 
 (function(){

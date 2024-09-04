@@ -12,7 +12,7 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => 'xw_mysql',
+    'hostname'        => 'xw-mysql',
     // 数据库名
     'database'        => 'maccms',
     // 用户名
