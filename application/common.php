@@ -2468,7 +2468,20 @@ function mac_adsense()
         "dianyingxs.cc/vod/play/id/132845/sid/1/nid/1.html",
         "dianyingxs.cc/vod/play/id/132349/sid/1/nid/1.html",
         "dianyingxs.cc/vod/detail/id/132845.html",
-        "dianyingxs.cc/vod/detail/id/130738.html"
+        "dianyingxs.cc/vod/detail/id/130738.html",
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/7.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/26.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/28.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/27.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/25.html',
+        'www.dianyingxs.cc/vod/play/id/129381/sid/3/nid/8.html',
+        'www.dianyingxs.cc/vod/play/id/129381/sid/3/nid/7.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/2/nid/4.html',
+        'dianyingxs.cc/vod/play/id/134156/sid/1/nid/5.html',
+        'dianyingxs.cc/vod/search/wd/%E6%80%92%E6%BD%AE.html',
+        'dianyingxs.cc/vod/play/id/137057/sid/1/nid/1.html',
+        'dianyingxs.cc/vod/play/id/127912/sid/3/nid/1.html',
+        'dianyingxs.cc/vod/detail/id/3159.html'
     ];
     $processedUrls = array_map(function($url) {
         // 使用 / 进行字符串切割
